@@ -1,12 +1,12 @@
-ref-union-di
-============
+@napi-ffi/ref-union-di
+======================
 ### Create ABI-compliant "[union][]" instances on top of Buffers
 
-[![NPM Version](https://img.shields.io/npm/v/ref-union-di.svg?style=flat)](https://npmjs.org/package/ref-union-di)
-[![NPM Downloads](https://img.shields.io/npm/dm/ref-union-di.svg?style=flat)](https://npmjs.org/package/ref-union-di)
-[![Build Status](https://travis-ci.org/node-ffi-napi/ref-union-di.svg?style=flat&branch=latest)](https://travis-ci.org/node-ffi-napi/ref-union-di?branch=latest)
-[![Coverage Status](https://coveralls.io/repos/node-ffi-napi/ref-union-di/badge.svg?branch=latest)](https://coveralls.io/r/node-ffi-napi/ref-union-di?branch=latest)
-[![Dependency Status](https://david-dm.org/node-ffi-napi/ref-union-di.svg?style=flat)](https://david-dm.org/node-ffi-napi/ref-union-di)
+[![CI](https://github.com/napi-ffi/ref-union-di/actions/workflows/ci.yml/badge.svg)](https://github.com/napi-ffi/ref-union-di/actions/workflows/ci.yml)
+[![NPM Version](https://img.shields.io/npm/v/@napi-ffi/ref-union-di.svg?style=flat)](https://npmjs.org/package/@napi-ffi/ref-union-di)
+[![NPM Downloads](https://img.shields.io/npm/dm/@napi-ffi/ref-union-di.svg?style=flat)](https://npmjs.org/package/@napi-ffi/ref-union-di)
+
+> Forked from [node-ffi-napi/ref-union-di](https://github.com/node-ffi-napi/ref-union-di) to maintain and modernize the project while preserving the original APIs.
 
 **Note**: The only difference to `ref-union` is that this module takes its
 dependency on `ref` via dependency injection, so that it is easier to use
@@ -18,7 +18,7 @@ Installation
 Install with `npm`:
 
 ``` bash
-$ npm install ref-union-di
+$ npm install @napi-ffi/ref-union-di
 ```
 
 
@@ -26,8 +26,8 @@ Examples
 --------
 
 ``` js
-var ref = require('ref')
-var Union = require('ref-union-di')(ref)
+var ref = require('@napi-ffi/ref-napi')
+var Union = require('@napi-ffi/ref-union-di')(ref)
 
 // a couple typedefs
 var int = ref.types.int

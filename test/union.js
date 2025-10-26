@@ -1,9 +1,9 @@
 
 var assert = require('assert')
-  , ref = require('ref')
-  , Struct = require('ref-struct-di')(ref)
+  , ref = require('@napi-ffi/ref-napi')
+  , Struct = require('@napi-ffi/ref-struct-di')(ref)
   , Union = require('../')(ref)
-  , bindings = require('bindings')({ module_root: __dirname, bindings: 'native_tests' })
+  , bindings = require('node-gyp-build')(__dirname);
 
 describe('Union', function () {
 
