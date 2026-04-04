@@ -9,7 +9,7 @@
     "c++",
     "ffi"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "Anna Henningsen <anna@addaleax.net>",
   "contributors": [
     "Nathan Rajlich <nathan@tootallnate.net>"
@@ -34,7 +34,7 @@
     "node-gyp-build": "^4.2.1",
     "mocha": "^7.1.1",
     "nyc": "^15.0.0",
-    "@napi-ffi/ref-napi": "^3.0.5",
+    "@napi-ffi/ref-napi": "^3.0.7",
     "@napi-ffi/ref-struct-di": "^1.1.1"
   }
 }
